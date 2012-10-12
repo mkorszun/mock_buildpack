@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Creating $1/index.html"
 echo "abc" >> "$1/index.html"
+if [ ! -f "$1/index.html" ]; then
+    echo "Failed"
+fi
